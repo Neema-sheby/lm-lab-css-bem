@@ -1,0 +1,30 @@
+.btn {
+  width: 60%;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+
+  &--danger {
+    color: $color-danger-font;
+    font-size: 1.4rem;
+    border: 0.1rem solid $color-danger;
+    box-shadow: $box-shadow-danger;
+    animation: flashDanger 1s linear 1s infinite alternate;
+    -webkit-animation: flashDanger 1s linear 1s infinite alternate;
+  }
+
+  &--safe {
+    color: $color-safe-font;
+    font-size: 1.4rem;
+    border: 0.1rem solid $color-safe;
+    box-shadow: $box-shadow-safe;
+    animation: flashSafe 1s linear 1s infinite alternate;
+    -webkit-animation: flashSafe 1s linear 1s infinite alternate;
+  }
+}

@@ -1,3 +1,19 @@
+@keyframes flashDanger {
+  0% {
+    box-shadow: none; }
+  50% {
+    box-shadow: 0 0 1rem 0.3rem rgba(232, 65, 24, 0.5); }
+  0% {
+    box-shadow: none; } }
+
+@keyframes flashSafe {
+  0% {
+    box-shadow: none; }
+  50% {
+    box-shadow: 0 0 1rem 0.2rem rgba(46, 204, 113, 0.5); }
+  0% {
+    box-shadow: none; } }
+
 *,
 *::after,
 *::before {
@@ -27,31 +43,69 @@ body {
 
 .heading-card {
   width: 100%;
-  font-size: 1.8rem;
-  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
   text-align: center;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 1rem 0; }
+
+.btn {
+  width: 60%;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  text-transform: capitalize;
+  margin: 1rem 0; }
+  .btn--danger {
+    color: #e84118;
+    font-size: 1.4rem;
+    border: 0.1rem solid rgba(232, 65, 24, 0.5);
+    box-shadow: 0 0 1rem 0.3rem rgba(232, 65, 24, 0.5);
+    animation: flashDanger 1s linear 1s infinite alternate;
+    -webkit-animation: flashDanger 1s linear 1s infinite alternate; }
+  .btn--safe {
+    color: #2ecc71;
+    font-size: 1.4rem;
+    border: 0.1rem solid rgba(46, 204, 113, 0.5);
+    box-shadow: 0 0 1rem 0.2rem rgba(46, 204, 113, 0.5);
+    animation: flashSafe 1s linear 1s infinite alternate;
+    -webkit-animation: flashSafe 1s linear 1s infinite alternate; }
 
 .card {
   width: 30%;
-  height: 30rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   color: #bdc3c7;
-  padding: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgba(23, 183, 218, 0.2);
-  padding: 1rem; }
+  padding: 0 1rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem; }
   .card__img {
-    width: 100%;
+    width: 70%;
     margin-bottom: 0.5rem; }
   .card__description {
     text-align: center;
     width: 100%;
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0;
+    cursor: pointer; }
     .card__description:not(:last-child) {
       border-bottom: 0.05rem solid rgba(23, 183, 218, 0.2); }
+    .card__description:hover {
+      background-color: rgba(72, 219, 251, 0.1); }
+  .card--light {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1); }
 
 .header {
   width: 100%;
@@ -64,18 +118,21 @@ body {
   background-image: url(../../images/galaxy.jpg);
   background-repeat: repeat-x;
   background-position: center;
-  box-shadow: 0 0 0.5rem 0.5rem rgba(23, 183, 218, 0.2); }
+  box-shadow: 0 0 0.5rem 0.5rem rgba(23, 183, 218, 0.2);
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem; }
 
 .main {
   box-shadow: 0 0 0.5rem 0.5rem rgba(23, 183, 218, 0.2);
   background-image: url(../../images/nasa-image.jpg);
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%; }
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem; }
 
 .section-cardBox {
   width: 100%;
-  height: 50rem;
   display: flex;
   justify-content: space-evenly;
   align-items: start;
-  padding: 5rem 0; }
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 5rem; }
