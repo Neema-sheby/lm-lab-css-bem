@@ -1,5 +1,5 @@
 .card {
-  width: 15rem;
+  width: 16rem;
   height: 35rem;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   }
 
   &__img {
-    width: 70%;
+    width: 80%;
     margin-bottom: 0.5rem;
     @include respond(tablet) {
       width: 100%;
@@ -31,11 +31,21 @@
     width: 100%;
     padding: 0.5rem 0;
     cursor: pointer;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+
     &:not(:last-child) {
       border-bottom: $border-thin;
     }
     &:hover {
-      background-color: $color-megaman;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
     }
 
     @include respond(tablet) {
@@ -44,6 +54,7 @@
   }
 
   &--dark {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   &--light {

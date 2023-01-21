@@ -9,6 +9,7 @@
   -o-border-radius: 2rem;
   text-transform: capitalize;
   margin: 1rem 0;
+  cursor: pointer;
 
   &--danger {
     color: $color-danger-font;
@@ -17,6 +18,22 @@
     box-shadow: $box-shadow-danger;
     animation: flashDanger 1s linear 1s infinite alternate;
     -webkit-animation: flashDanger 1s linear 1s infinite alternate;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+
+    &:hover {
+      transform: translateY(-0.3rem) scale(1.05);
+      -webkit-transform: translateY(-0.3rem) scale(1.05);
+      -moz-transform: translateY(-0.3rem) scale(1.05);
+      -ms-transform: translateY(-0.3rem) scale(1.05);
+      -o-transform: translateY(-0.3rem) scale(1.05);
+      animation: none;
+      -webkit-animation: none;
+      box-shadow: none;
+    }
   }
 
   &--safe {
@@ -26,5 +43,21 @@
     box-shadow: $box-shadow-safe;
     animation: flashSafe 1s linear 1s infinite alternate;
     -webkit-animation: flashSafe 1s linear 1s infinite alternate;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+
+    &:hover {
+      transform: translateY(-0.3rem) scale(1.05);
+      -webkit-transform: translateY(-0.3rem) scale(1.05);
+      -moz-transform: translateY(-0.3rem) scale(1.05);
+      -ms-transform: translateY(-0.3rem) scale(1.05);
+      -o-transform: translateY(-0.3rem) scale(1.05);
+      animation: none;
+      -webkit-animation: none;
+      box-shadow: none;
+    }
   }
 }
