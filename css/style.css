@@ -47,6 +47,9 @@ body {
   text-align: center;
   font-weight: 700;
   padding: 1rem 0; }
+  @media only screen and (max-width: 600px) {
+    .heading-card {
+      font-size: 1.2rem; } }
 
 .btn {
   width: 60%;
@@ -75,7 +78,7 @@ body {
     -webkit-animation: flashSafe 1s linear 1s infinite alternate; }
 
 .card {
-  width: 30%;
+  width: 15rem;
   height: 35rem;
   display: flex;
   flex-direction: column;
@@ -84,14 +87,20 @@ body {
   color: #bdc3c7;
   box-shadow: 0 0 0.5rem 0.5rem rgba(23, 183, 218, 0.2);
   padding: 0 1rem;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem; }
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem; }
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 90%; } }
   .card__img {
     width: 70%;
     margin-bottom: 0.5rem; }
+    @media only screen and (max-width: 600px) {
+      .card__img {
+        width: 100%; } }
   .card__description {
     text-align: center;
     width: 100%;
@@ -101,6 +110,9 @@ body {
       border-bottom: 0.05rem solid rgba(23, 183, 218, 0.2); }
     .card__description:hover {
       background-color: rgba(72, 219, 251, 0.1); }
+    @media only screen and (max-width: 600px) {
+      .card__description {
+        font-size: 0.85rem; } }
   .card--light {
     background: rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(9px);
@@ -136,3 +148,6 @@ body {
   flex-wrap: wrap;
   gap: 3rem;
   padding: 5rem; }
+  @media only screen and (max-width: 600px) {
+    .section-cardBox {
+      padding: 3rem 1rem 1rem 1rem; } }

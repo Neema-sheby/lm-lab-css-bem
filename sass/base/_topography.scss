@@ -19,4 +19,8 @@ body {
   text-align: center;
   font-weight: 700;
   padding: 1rem 0;
+
+  @include respond(tablet) {
+    font-size: 1.2rem;
+  }
 }

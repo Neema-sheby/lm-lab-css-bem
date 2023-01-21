@@ -1,5 +1,4 @@
 .main {
-  //@includecenter:;
   box-shadow: $box-shadow;
   background-image: url(../../images/nasa-image.jpg);
   border-bottom-left-radius: $border-radius;
@@ -13,4 +12,8 @@
   flex-wrap: wrap;
   gap: 3rem;
   padding: 5rem;
+
+  @include respond(tablet) {
+    padding: 3rem 1rem 1rem 1rem;
+  }
 }
