@@ -1,0 +1,22 @@
+body {
+  width: 100vw;
+  font-family: "Play", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: $color-black;
+}
+
+.heading-primary {
+  width: 100%;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading-card {
+  width: 100%;
+  font-size: 1.8rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+  font-weight: 700;
+}

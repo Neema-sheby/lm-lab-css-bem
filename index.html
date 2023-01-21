@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
 
-<body>
-    <h1>BEM Wars</h1>
-    <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
-        </div>
-
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
-        </div>
+  <body>
+    <header class="header">
+      <h1 class="heading-primary">BEM Wars</h1>
+    </header>
+    <main class="main">
+        <section class="section-cardBox">
+            <div class="card card--dark">
+                <h2 class="heading-card">The Dark Side</h2>
+                <img class="card__img" src="./images/vader.jpeg" alt="Darth Vader" />
+                <p class="card__description">Nesting!</p>
+                <p class="card__description">Conflict!</p>
+                <p class="card__description">Specificity Wars!</p>
+                <p class="card__description">Cookies</p>
+              </div>
+        
+              <div class="card card--light">
+                <h2 class="heading-card">The Force</h2>
+                <img class="card__img" src="./images/yoda.jpeg" alt="Yoda"/>
+                <p class="card__description">Love</p>
+                <p class="card__description">Beauty</p>
+                <p class="card__description">CSS that Scales!</p>
+                <p class="card__description">Great warrior. Wars not make one great!</p>
+              </div>
+        </section>
     </div>
-</body>
-
+  </body>
 </html>
