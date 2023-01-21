@@ -1,3 +1,5 @@
+// All the buttons styles used in website
+
 .btn {
   width: 60%;
   height: 3rem;
@@ -56,7 +58,7 @@
     border: 0.1rem solid $color-warning;
     box-shadow: $box-shadow-warning;
     animation: flashSafe 1s linear 1s infinite alternate;
-    -webkit-animation: flashSafe 1s linear 1s infinite alternate;
+    -webkit-animation: flashWarning 1s linear 1s infinite alternate;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;

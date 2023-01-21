@@ -1,4 +1,4 @@
-//flashing box shadow
+//flashing box shadow -danger
 @keyframes flashDanger {
   0% {
     box-shadow: none;
@@ -11,12 +11,28 @@
   }
 }
 
+//flashing box shadow - safe
+
 @keyframes flashSafe {
   0% {
     box-shadow: none;
   }
   50% {
     box-shadow: $box-shadow-safe;
+  }
+  0% {
+    box-shadow: none;
+  }
+}
+
+//flashing box shadow - ewarning
+
+@keyframes flashWarning {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: $box-shadow-warning;
   }
   0% {
     box-shadow: none;
