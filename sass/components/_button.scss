@@ -11,6 +11,17 @@
   margin: 1rem 0;
   cursor: pointer;
 
+  &:hover {
+    transform: translateY(-0.3rem) scale(1.05);
+    -webkit-transform: translateY(-0.3rem) scale(1.05);
+    -moz-transform: translateY(-0.3rem) scale(1.05);
+    -ms-transform: translateY(-0.3rem) scale(1.05);
+    -o-transform: translateY(-0.3rem) scale(1.05);
+    animation: none;
+    -webkit-animation: none;
+    box-shadow: none;
+  }
+
   &--danger {
     color: $color-danger-font;
     font-size: 1.4rem;
@@ -23,17 +34,6 @@
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
-
-    &:hover {
-      transform: translateY(-0.3rem) scale(1.05);
-      -webkit-transform: translateY(-0.3rem) scale(1.05);
-      -moz-transform: translateY(-0.3rem) scale(1.05);
-      -ms-transform: translateY(-0.3rem) scale(1.05);
-      -o-transform: translateY(-0.3rem) scale(1.05);
-      animation: none;
-      -webkit-animation: none;
-      box-shadow: none;
-    }
   }
 
   &--safe {
@@ -48,16 +48,19 @@
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
+  }
 
-    &:hover {
-      transform: translateY(-0.3rem) scale(1.05);
-      -webkit-transform: translateY(-0.3rem) scale(1.05);
-      -moz-transform: translateY(-0.3rem) scale(1.05);
-      -ms-transform: translateY(-0.3rem) scale(1.05);
-      -o-transform: translateY(-0.3rem) scale(1.05);
-      animation: none;
-      -webkit-animation: none;
-      box-shadow: none;
-    }
+  &--warning {
+    color: $color-warning-font;
+    font-size: 1.4rem;
+    border: 0.1rem solid $color-warning;
+    box-shadow: $box-shadow-warning;
+    animation: flashSafe 1s linear 1s infinite alternate;
+    -webkit-animation: flashSafe 1s linear 1s infinite alternate;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
   }
 }

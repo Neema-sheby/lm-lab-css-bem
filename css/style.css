@@ -63,6 +63,15 @@ body {
   text-transform: capitalize;
   margin: 1rem 0;
   cursor: pointer; }
+  .btn:hover {
+    transform: translateY(-0.3rem) scale(1.05);
+    -webkit-transform: translateY(-0.3rem) scale(1.05);
+    -moz-transform: translateY(-0.3rem) scale(1.05);
+    -ms-transform: translateY(-0.3rem) scale(1.05);
+    -o-transform: translateY(-0.3rem) scale(1.05);
+    animation: none;
+    -webkit-animation: none;
+    box-shadow: none; }
   .btn--danger {
     color: #e84118;
     font-size: 1.4rem;
@@ -75,15 +84,6 @@ body {
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear; }
-    .btn--danger:hover {
-      transform: translateY(-0.3rem) scale(1.05);
-      -webkit-transform: translateY(-0.3rem) scale(1.05);
-      -moz-transform: translateY(-0.3rem) scale(1.05);
-      -ms-transform: translateY(-0.3rem) scale(1.05);
-      -o-transform: translateY(-0.3rem) scale(1.05);
-      animation: none;
-      -webkit-animation: none;
-      box-shadow: none; }
   .btn--safe {
     color: #2ecc71;
     font-size: 1.4rem;
@@ -96,15 +96,18 @@ body {
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear; }
-    .btn--safe:hover {
-      transform: translateY(-0.3rem) scale(1.05);
-      -webkit-transform: translateY(-0.3rem) scale(1.05);
-      -moz-transform: translateY(-0.3rem) scale(1.05);
-      -ms-transform: translateY(-0.3rem) scale(1.05);
-      -o-transform: translateY(-0.3rem) scale(1.05);
-      animation: none;
-      -webkit-animation: none;
-      box-shadow: none; }
+  .btn--warning {
+    color: #e1b12c;
+    font-size: 1.4rem;
+    border: 0.1rem solid rgba(225, 177, 44, 0.5);
+    box-shadow: 0 0 1rem 0.2rem rgba(225, 177, 44, 0.5);
+    animation: flashSafe 1s linear 1s infinite alternate;
+    -webkit-animation: flashSafe 1s linear 1s infinite alternate;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear; }
 
 .card {
   width: 16rem;
@@ -158,6 +161,8 @@ body {
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.1); }
+  .card--medium {
+    background: rgba(72, 219, 251, 0.1); }
 
 .header {
   width: 100%;
